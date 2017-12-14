@@ -1,0 +1,51 @@
+<!--
+  Generated template for the HorarioClasePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Horario de Clase</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<!-- <ion-row class='una'>
+        <ion-col> -->
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>Horas</ion-col>
+      <ion-col>Lunes</ion-col>
+      <ion-col>Martes</ion-col>
+      <ion-col>Miercoles</ion-col>
+      <ion-col>Jueves</ion-col>
+      <ion-col>Viernes</ion-col>
+    </ion-row>
+    <ion-row *ngFor="let item of arrFinal">
+
+      <ion-col>
+        {{ item.hora }}
+      </ion-col>
+      <ion-col>
+        <p *ngFor="let l of item.LUNES">{{ l }}</p>
+      </ion-col>
+      <ion-col>
+        <p *ngFor="let m of item.MARTES">{{ m }}</p>
+      </ion-col>
+      <ion-col>
+        <p *ngFor="let x of item.MIERCOLES">{{ x }}</p>
+      </ion-col>
+      <ion-col>
+        <p *ngFor="let j of item.JUEVES">{{ j }}</p>
+      </ion-col>
+      <ion-col>
+        <p *ngFor="let v of item.VIERNES">{{ v }}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

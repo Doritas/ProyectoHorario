@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cursos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <!-- <button ion-item *ngFor="let item of lists" (click)="gotoEsoPages()">{{item.name}}</button> -->
+        <button ion-item (click)="gotoEsoPages()">Eso</button>
+        <button ion-item (click)="gotoBachilleratoPages()">Bachillerato</button>
+        <button ion-item (click)="gotoModuloSuperior()">Modulo Superior</button>
+        <button ion-item (click)="gotoModuloMedio()">Modulo Medio</button>
+        <button ion-item (click)="gotoDiversificacion()">Diversificacion</button>
+        <button ion-item (click)="gotoPCPI()">PCPI</button>
+      </ion-list>
+
+  <!-- <button ion-button (click)="testDB()">Prueba DB</button> -->
+</ion-content>
