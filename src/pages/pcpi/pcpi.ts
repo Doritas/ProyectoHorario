@@ -22,11 +22,11 @@ export class PcpiPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.lists.push({
       name: 'Primero',
-      clase: '1pcpi' 
+      clases: [{nombre: '1pcpi'}]
     });
     this.lists.push({
       name: 'Segundo',
-      clase:  '2pcpi' 
+      clases: [{nombre: '2pcpi' }] 
     });
   }
 
@@ -37,7 +37,7 @@ export class PcpiPage {
 
   gotoHorarioPcpiPage(clase) {
     
-       this.navCtrl.push(HorarioPage, { name : clase })
+       this.navCtrl.push(HorarioPage, { name : clase.nombre })
     }
 
 }

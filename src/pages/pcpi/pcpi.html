@@ -16,6 +16,6 @@
 <ion-content padding>
 
     <ion-item color=secondary *ngFor="let item of lists">{{item.name}}
-        <button ion-item *ngFor="let c of item.clase" (click)="gotoHorarioPcpiPage(clase)">{{c.curso}}</button>
+        <button ion-item *ngFor="let clase of item.clases" (click)="gotoHorarioPcpiPage(clase)">{{clase.nombre}}</button>
       </ion-item>
 </ion-content>

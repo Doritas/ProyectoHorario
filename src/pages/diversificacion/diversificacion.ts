@@ -22,11 +22,11 @@ export class DiversificacionPage {
 
     this.lists.push({
       name: 'Tercero',
-      clase: '3div' 
+      clases: [{nombre : '3div'}] 
     });
     this.lists.push({
       name: 'Cuarto',
-      clase:  '4div' 
+      clases: [{nombre: '4div' }] 
     });
   }
 
@@ -36,7 +36,7 @@ export class DiversificacionPage {
 
   gotoHorarioDiversificacionPage(clase) {
     
-       this.navCtrl.push(HorarioPage, { name : clase })
+       this.navCtrl.push(HorarioPage, { name : clase.nombre })
     }
 
 }

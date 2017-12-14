@@ -66,8 +66,6 @@ export class HomePage {
     this.navCtrl.push(PcpiPage, { name: 'hola' })
 
   }
-  testDB(){
-    //this.sql.testDB();
-  }
+  
 
 }

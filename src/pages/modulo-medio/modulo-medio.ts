@@ -24,11 +24,11 @@ export class ModuloMedioPage {
 
     this.lists.push({
       name: 'Primero',
-      clase: '1ga(loe)' 
+      clases: [{nombre: '1ga(loe)'}]
     });
     this.lists.push({
       name: 'Segundo',
-      clase:  '2ga' 
+      clases: [{nombre: '2ga' }] 
     });
 
   }
@@ -39,7 +39,7 @@ export class ModuloMedioPage {
 
   gotoHorarioModuloMedioPage(clase) {
     
-       this.navCtrl.push(HorarioPage, { name : clase })
+       this.navCtrl.push(HorarioPage, { name : clase.nombre })
     }
 
 }
